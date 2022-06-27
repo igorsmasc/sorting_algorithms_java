@@ -1,5 +1,6 @@
-public class SelectionSort {
-    public static void sort(int[] array) {
+public class SelectionSort extends SortingAlgorithm {
+    @Override
+    public void sort(int[] array) {
         for(int i = 0; i < array.length;i++) {
             int smallest = findSmallestValueIndex(array, i);
             swap(array, i, smallest);
@@ -14,11 +15,5 @@ public class SelectionSort {
             }
         }
         return smallestValueIndex;
-    }
-
-    private static void swap(int[] array, int index1, int index2) {
-        int temp = array[index1];
-        array[index1] = array[index2];
-        array[index2] = temp;
     }
 }
