@@ -1,3 +1,4 @@
+import java.lang.reflect.Array;
 import java.util.Arrays;
 
 public class Main {
@@ -23,6 +24,17 @@ public class Main {
         System.out.println("Bubble Sort Array - Before: " + Arrays.toString(bubbleArray));
         bubbleSort.sort(bubbleArray);
         System.out.println("Bubble Sort Array - After : " + Arrays.toString(bubbleArray));
+        System.out.println();
+
+        // -------------------- //
+        //    Insertion Sort    //
+        // -------------------- //
+
+        int[] insetionArray = new int[]{10, 1, 5, 2, 4, 7, 8, 3, 6, 9};
+        SortingAlgorithm insetionSort = new InsertionSort();
+        System.out.println("Insertion Sort Array - Before: " + Arrays.toString(insetionArray));
+        insetionSort.sort(insetionArray);
+        System.out.println("Insertion Sort Array - After : " + Arrays.toString(insetionArray));
         System.out.println();
     }
 }
